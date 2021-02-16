@@ -1,0 +1,116 @@
+/*.container{
+	width: 100%;
+}*/
+<<<<<<< HEAD
+=======
+
+/* NAV BARS*/
+
+
+/* big black */
+>>>>>>> af73dd93726e458bc0160f84350990dfa381f1ed
+
+
+/* big black */
+
+.bigBlack .iplay {
+    display: inline-block;
+}
+
+.bigBlack h2 {
+    color: #FFFFFF;
+    display: inline-block;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+
+/* big pink */
+
+.bigPink {
+    background-color: #DB008B;
+    margin: 0;
+    padding-bottom: 100px;
+}
+
+.bigPink h1 {
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    padding-top: 50px;
+}
+
+.bigPink p {
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    padding-top: 10px;
+}
+
+.buttonMarqueDiv {
+    background-color: #DB008B;
+    padding-top: 50px;
+    padding-left: 350px;
+}
+
+.buttonMarqueDiv2 {
+    background-color: #DB008B;
+    padding-top: 10px;
+    padding-left: 400px;
+}
+
+.imgMarque {
+    width: 30px;
+    padding-right: 4px;
+}
+
+
+/* FAQ */
+
+.faqDiv h1 {
+    text-align: center;
+    margin: 0;
+    padding-top: 50px;
+}
+
+.faqDiv .pDeFaq {
+    text-align: center;
+    font-size: 12px;
+    padding-top: 10px;
+}
+
+.ButtonFaq {
+    padding-left: 35%;
+}
+
+.abo {
+    text-align: center;
+    font-size: 10px;
+    padding-top: 25px;
+    padding-bottom: 100px;
+}
+
+.aboLien {
+    color: #E40034;
+}
+
+
+/* LIEN */
+
+.linkAll {
+    background-color: #000000;
+}
+
+.links {
+    color: #B7B7B7;
+    font-size: 10px;
+    display: inline;
+}
+
+.links a {
+    color: #FFFFFF;
+}
+
+.linksImg {
+    display: inline;
+}
