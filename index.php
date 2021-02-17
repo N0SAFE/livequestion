@@ -37,6 +37,17 @@
         </nav>
 </header>
 <section>
+    <div class="container-fluid acceuil">
+        <div class="container acceuilText">
+        
+        </div>
+        <div class="container acceuilPhoto">
+            
+        </div>
+    </div>
+
+</section>
+<section>
     <div class="container-fluid bigBlack badge badge-secondary">
         <img src="images/iplay.png" class="iplay">
         <h2>"Nulla venenatis magna fringilla"</h2>
