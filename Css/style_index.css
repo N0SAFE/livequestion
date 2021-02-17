@@ -1,14 +1,14 @@
 /*.container{
 	width: 100%;
 }*/
-<<<<<<< HEAD
-=======
-
-/* NAV BARS*/
 
 
-/* big black */
->>>>>>> af73dd93726e458bc0160f84350990dfa381f1ed
+/* navbar */
+
+.btnPink {
+    background-color: #ED008C;
+    border-radius: 35px !important;
+}
 
 
 /* big black */

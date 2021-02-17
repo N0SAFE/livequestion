@@ -29,7 +29,7 @@
                         </li>
                     <div class="connexionBg">
                         <li class="nav-item connexion">
-                            <a class="nav-link" href="Authentification_PHP/login.php"><span class="text-white">se connecter</span></a>
+                            <button class="btnPink text-light" href="Authentification_PHP/login.php">Se connecter</button>
                         </li>
                     </div>
                 </ul>
