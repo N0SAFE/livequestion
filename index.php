@@ -38,14 +38,16 @@
 </header>
 <section>
     <div class="container-fluid acceuil">
-        <div class="container acceuilText">
-        
+ <!--        <img src="images/fondDecran.png" class="imgAcceuil"> -->
+    <div class="clearfix">
+        <div class="  float-left acceuilText">
+          <h1 class="titreAcceuil">Lorem ipsum<br>dolor sit<br>amet.</h1>
+          <p class="txtAcceuil">Sed elit libero. accumsan et volutpat id, aliquam<br>tristique odio. Mauris sed lectus a justo malesuada<br>dapibus . Morbi eleifend tellus nisi sed ullamcorper<br>mi tincidunt faucibus. Mauris justo totor. tempor<br>ut odio in, dictum malesuada eros.</p>
+        <button type="button" class="btn btn-dark  butoAcceuil">Bouton CTA</button>
         </div>
-        <div class="container acceuilPhoto">
-            
+        <img src="images/step-1.png" class=" float-right imgAcceuil2">
         </div>
     </div>
-
 </section>
 <section>
     <div class="container-fluid bigBlack badge badge-secondary">

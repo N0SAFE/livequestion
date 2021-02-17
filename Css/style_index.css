@@ -8,12 +8,33 @@
 
 /* ACCEUIL */
  
-.acceuil{
-	background-image:url("./images/fondDecran.png");
+ .acceuilText {
+ 	
+ }
+
+
+
+.titreAcceuil {
+ font-size: 50px;
+ padding-left: 270px;
 }
 
-/* big black */
->>>>>>> af73dd93726e458bc0160f84350990dfa381f1ed
+.txtAcceuil {
+	font-size: 15px;
+	padding-left: 280px;
+}
+
+.imgAcceuil2 {
+	padding-right: 280px;
+	padding-top: 40px;
+	width: 780px;
+}
+
+.butoAcceuil {
+	padding-left: 290px;
+	
+
+}
 
 
 /* big black */
