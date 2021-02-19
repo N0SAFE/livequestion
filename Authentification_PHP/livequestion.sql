@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  localhost
--- Généré le :  Mer 17 Février 2021 à 15:26
+-- Généré le :  Ven 19 Février 2021 à 08:48
 -- Version du serveur :  5.7.11
 -- Version de PHP :  7.0.3
 
@@ -128,6 +128,13 @@ ALTER TABLE `utilisateurs`
 --
 -- Contraintes pour les tables exportées
 --
+
+--
+-- Contraintes pour la table `question`
+--
+ALTER TABLE `question`
+  ADD CONSTRAINT ` fk_aut_id` FOREIGN KEY (`auteur_id`) REFERENCES `utilisateurs` (`id`),
+  ADD CONSTRAINT ` fk_cat_id` FOREIGN KEY (`cat_id`) REFERENCES `categorie` (`id`);
 
 --
 -- Contraintes pour la table `reponse`

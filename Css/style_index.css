@@ -5,19 +5,72 @@
 
 /* navbar */
 
-.btnPink {
+header .btnPink {
     background-color: #ED008C;
     border-radius: 35px !important;
     height: 28px;
     width: 100px;
 }
 
-.navleft {
+header .navleft {
     padding-left: 8%;
 }
 
-.navright {
+header .navright {
     padding-right: 20%;
+}
+
+
+/* ACCEUIL */
+
+.bg_top_page {
+    background-image: url("../images/fondDecran.png");
+    height: 600px;
+    border-bottom-right-radius: 50% 100px;
+    border-bottom-left-radius: 50% 100px;
+}
+
+.acceuil .titreAcceuil {
+    font-size: 50px;
+    padding-left: 270px;
+}
+
+.acceuil .txtAcceuil {
+    font-size: 15px;
+    padding-left: 280px;
+}
+
+.acceuil .imgAcceuil2 {
+    padding-right: 280px;
+    padding-top: 40px;
+    width: 780px;
+}
+
+.acceuil .butonAcceuil {
+    margin-left: 280px;
+}
+
+
+/*section 2*/
+
+.section2 {
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+
+.section2 .textDiv {
+    width: 33%;
+}
+
+.section2 .tailleImg {
+    size: 45px;
+}
+
+
+/* section3 */
+
+.section3 {
+    background-color: #EEEEEE;
 }
 
 
