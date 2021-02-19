@@ -48,6 +48,13 @@
 						<input type="text" class="box-input" name="username" placeholder="Nom d'utilisateur" required />
 						<input type="text" class="box-input" name="email" placeholder="Email" required />
 						<input type="password" class="box-input" name="password" placeholder="Mot de passe" required />
+						<input type="password" class="box-input" name="password2" placeholder="Mot de passe (confirmation) " required />
+						<input type="radio" class="register_radio" name="choixgenre" value="H">
+   						<label >Homme</label>
+   						<input type="radio"  class="register_radio"  name="choixgenre" value="F">
+    					<label >Femme</label>
+
+						
 						<input type="submit" name="submit" value="S'inscrire" class="box-button" />
 						<p class="box-register">Déjà inscrit ? <a href="login.php">Connectez-vous ici</a></p>
 					</form>

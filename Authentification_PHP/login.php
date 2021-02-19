@@ -54,8 +54,7 @@
             <h1 class="box-title">Connexion</h1>
             <input type="text" class="box-input" name="username" placeholder="Nom d'utilisateur">
             <input type="password" class="box-input" name="password" placeholder="Mot de passe">
-            <input type=radio class="box-input radio " name="genre" value="h">
-            <input type=radio class="box-input" name="genre" value="f">
+           
             <input type="submit" value="Connexion " name="submit" class="box-button">
             <p class="box-register">Vous êtes nouveau ici ? <a href="register.php">S'inscrire</a></p>
             <?php if (! empty($message)) { ?>
