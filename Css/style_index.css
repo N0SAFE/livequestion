@@ -1,10 +1,8 @@
 /*.container{
 	width: 100%;
 }*/
-<<<<<<< HEAD
-=======
 
-/* NAV BARS*/
+
 
 /* ACCEUIL */
  
@@ -34,10 +32,31 @@
 	padding-left: 290px;
 	
 
+
+/* navbar */
+
+.btnPink {
+    background-color: #ED008C;
+    border-radius: 35px !important;
+    height: 28px;
+    width: 100px;
+}
+
+.navleft {
+    padding-left: 8%;
+}
+
+.navright {
+    padding-right: 20%;
+
 }
 
 
 /* big black */
+
+.bigBlack {
+    background-color: #1A2D34;
+}
 
 .bigBlack .iplay {
     display: inline-block;
