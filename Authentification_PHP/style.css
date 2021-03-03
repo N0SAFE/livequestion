@@ -1,30 +1,15 @@
 /* navbar */
 
-header .btnPink {
-    background-color: #ED008C;
-    border-radius: 35px !important;
-    height: 28px;
-    width: 100px;
-}
-
-header .navleft {
-    padding-left: 8%;
-}
-
-header .navright {
-    padding-right: 20%;
-}
-
-header .buttonNavbar {
+nav .buttonNavbar {
     height: 50px;
     width: 150px;
 }
 
-header .navbarRight {
+nav .navbarRight {
     margin-right: 50px;
 }
 
-header .navbarLeft {
+nav .navbarLeft {
     margin-left: 50px;
 }
 
@@ -38,6 +23,10 @@ header .navbarLeft {
     nav .navbarRight {
         margin-right: 0;
     }
+}
+
+.connexion {
+    display: none;
 }
 
 
@@ -72,7 +61,6 @@ h1.box-title {
 
 .box-button {
     border-radius: 5px;
-    background: #d2483c;
     text-align: center;
     cursor: pointer;
     font-size: 19px;
@@ -102,7 +90,7 @@ h1.box-title {
     margin-bottom: 25px;
     padding-left: 10px;
     border-radius: 5px;
-    width: 347px;
+    width: 307px;
     height: 50px;
 }
 

@@ -14,21 +14,6 @@
 
 /* navbar */
 
-header .btnPink {
-    background-color: #ED008C;
-    border-radius: 35px !important;
-    height: 28px;
-    width: 100px;
-}
-
-header .navleft {
-    padding-left: 8%;
-}
-
-header .navright {
-    padding-right: 20%;
-}
-
 header .buttonNavbar {
     height: 50px;
     width: 150px;

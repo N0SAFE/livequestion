@@ -80,7 +80,7 @@
             <h1 class="text-center">Aenean magna odio</h1>
             <p class="padding-top-20 text-center">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.</p>
             <div class="container clearfix padding-top-25 center-300-px lien">
-                <button onclick="link1()" id="firstButton" class="btn gap-3 color-pink text-center float-start padding-top-10 padding-bottom-10">Lien1</button>
+                <button onclick="link1()" id="firstButton" class="gap-3 color-pink text-center float-start padding-top-10 padding-bottom-10">Lien1</button>
                 <button onclick="link2()" id="secondButton" class="btn gap-3 color-pink text-center float-start padding-top-10 padding-bottom-10">Lien2</button>
                 <button onclick="link3()" id="thirdButton" class="btn gap-3 color-pink text-center float-start padding-top-10 padding-bottom-10">Lien3</button>
             </div>

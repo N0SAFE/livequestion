@@ -36,7 +36,7 @@
                 </ul>
             </div>
         </div>
-        <button type="button" class="btn btn-primary buttonNavbar navbarRight" onclick="window.location.href='Authentification_PHP/index.php'">se connecter</button>
+        <button type="button" class="btn btn-primary buttonNavbar navbarRight connexion" onclick="window.location.href='Authentification_PHP/index.php'">se connecter</button>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
