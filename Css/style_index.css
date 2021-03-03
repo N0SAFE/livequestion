@@ -29,6 +29,31 @@ header .navright {
     padding-right: 20%;
 }
 
+header .buttonNavbar {
+    height: 50px;
+    width: 150px;
+}
+
+header .navbarRight {
+    margin-right: 50px;
+}
+
+header .navbarLeft {
+    margin-left: 50px;
+}
+
+@media screen and (max-width:768px) {
+    nav .navbarLeft {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width:850px) {
+    nav .navbarRight {
+        margin-right: 0;
+    }
+}
+
 
 /* ACCEUIL */
 
@@ -144,13 +169,20 @@ header .navright {
 
 /*section 2*/
 
-.section2 {
-    padding-top: 140px;
-    padding-bottom: 140px;
-}
-
 .section2 .tailleImg {
     size: 45px;
+}
+
+@media screen and (max-width:1000px) {
+    .section2 .notMedia {
+        display: none;
+    }
+}
+
+@media screen and (min-width:1001px) {
+    .section2 .media {
+        display: none;
+    }
 }
 
 
@@ -187,6 +219,29 @@ header .navright {
     height: 470px;
 }
 
+@media (max-width: 600px) {
+    .section3 .center-600-px {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:1420px) {
+    .section3 .container .img-up {
+        width: 580px;
+    }
+    .section3 .container .placementImg {
+        margin: 0 auto;
+        width: 580px;
+    }
+    .section3 .container .container-text {
+        padding: 0;
+        padding-top: 10px;
+        float: none;
+        margin: 0 auto;
+        width: 580px;
+    }
+}
+
 
 /* big black */
 
@@ -199,10 +254,8 @@ header .navright {
 }
 
 .bigBlack h2 {
-    color: #FFFFFF;
+    color: #050303;
     display: inline-block;
-    padding-top: 200px;
-    padding-bottom: 200px;
 }
 
 
