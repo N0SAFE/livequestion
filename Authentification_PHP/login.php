@@ -1,6 +1,9 @@
 ﻿<!DOCTYPE html>
 <html>
     <head>
+        <?php $title = 'connexion'; ?>
+        <?php $up = '../'; ?>
+        <?php include('../include/head.php'); ?>
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
@@ -49,7 +52,7 @@
                 }
             }
         ?>
-        
+        <?php include('../include/navbar.php'); ?>
         <form class="box" action="" method="post" name="login">
             <h1 class="box-title">Connexion</h1>
             <input type="text" class="box-input" name="pseudo" placeholder="Nom d'utilisateur">

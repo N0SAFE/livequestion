@@ -1,7 +1,10 @@
 ﻿<!DOCTYPE html>
 <html>
     <head>
-            <link rel="stylesheet" href="style.css" />
+		<?php $title = 'insciption'; ?>
+        <?php $up = '../'; ?>
+        <?php include('../include/head.php'); ?>
+        <link rel="stylesheet" href="style.css" />
     </head>
     <body>
 
@@ -44,7 +47,7 @@
 				}
 			// Cas où le formulaire n'a pas encore été validé
 			}else{
-			?>
+			?><?php include('../include/navbar.php'); ?>
 					<form class="box" action="" method="post">
 						<h1 class="box-title">S'inscrire</h1>
 						<input type="text" class="box-input" name="pseudo" placeholder="Nom d'utilisateur" required />
