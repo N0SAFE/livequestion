@@ -1,66 +1,16 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <script type="text/javascript" src="Javascript/script.js"></script>
-    <link href="Css/normalizer_css.css" rel="stylesheet">
-    <link href="Css/lib.css" rel="stylesheet">
+    <?php $home = ''; ?>
+    <?php $title = 'livequestion'; ?>
+    <?php $up = ''; ?>
+    <?php include('include/head.php'); ?>
     <link href="Css/style_index.css" type="text/css" rel="stylesheet">
-    <link href="Css/bootstrap.css" type="text/css" rel="stylesheet">
-    <title>livequestion</title>
 </head>
-
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-            <div class="container-fluid">
-                <span class="navbar-brand navbarLeft" href="#">Saint Vincent BTS 1</span>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="me-auto"></ul>
-                    <div class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">lien1</a>
-                        <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </div>
-                    <div class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">lien2</a>
-                        <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </div>
-                    <div class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">lien3</a>
-                        <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </div>
-                    <div class="nav-item dropdown navbarRight">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">lien4</a>
-                        <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <button type="button" class="btn btn-primary buttonNavbar navbarRight">se connecter</button>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-        </nav>
+        <?php include('include/navbar.php'); ?>
     </header>
     <section class="Acceuil bg-image container-fluid acceuil clearfix padding-top-50">
         <!--        <img src="images/fondDecran.png" class="imgAcceuil"> -->
@@ -130,7 +80,7 @@
             <h1 class="text-center">Aenean magna odio</h1>
             <p class="padding-top-20 text-center">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.</p>
             <div class="container clearfix padding-top-25 center-300-px lien">
-                <button onclick="link1()" id="firstButton" class="btn gap-3 color-pink text-center float-start padding-top-10 padding-bottom-10">Lien1</button>
+                <button onclick="link1()" id="firstButton" class="gap-3 color-pink text-center float-start padding-top-10 padding-bottom-10">Lien1</button>
                 <button onclick="link2()" id="secondButton" class="btn gap-3 color-pink text-center float-start padding-top-10 padding-bottom-10">Lien2</button>
                 <button onclick="link3()" id="thirdButton" class="btn gap-3 color-pink text-center float-start padding-top-10 padding-bottom-10">Lien3</button>
             </div>
@@ -242,10 +192,6 @@
             <img src="images/links.jpg " class="linksImg float-end">
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js " integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi " crossorigin="anonymous ">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js " integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG " crossorigin="anonymous ">
-    </script>
 </body>
 
 </html>

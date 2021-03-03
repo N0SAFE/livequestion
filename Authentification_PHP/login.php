@@ -1,6 +1,9 @@
 ﻿<!DOCTYPE html>
 <html>
     <head>
+        <?php $title = 'connexion'; ?>
+        <?php $up = '../'; ?>
+        <?php include('../include/head.php'); ?>
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
@@ -16,11 +19,11 @@
             $co = connexionBdd();
 
             if (isset($_POST['submit'])){
-                $username = $_POST['username'];
+                $pseudo = $_POST['pseudo'];
 				$password = hash('sha256', $_POST['password']);
 
                 // Préparation de la requête
-                $query = $co->prepare('SELECT * FROM users WHERE username=:login and password=:pass');
+                $query = $co->prepare('SELECT * FROM utilisateurs WHERE pseudo_uti=:login and mot_de_passe_uti=:pass');
 
                 // Association des paramètres aux variables/valeurs
                 $query->bindParam(':login', $username);
@@ -39,7 +42,7 @@
 				// et donc qu'il a le droit de se connecter
                 if($rows==1){
 					// On définit la variable de session username avec la valeur saisie par l'utilisateur
-                    $_SESSION['username'] = $username;
+                    $_SESSION['pseudo'] = $pseudo;
 					// On lance la page index.php à la place de la page actuelle
                     header("Location: index.php");
                 }else{
@@ -49,14 +52,12 @@
                 }
             }
         ?>
-        
+        <?php include('../include/navbar.php'); ?>
         <form class="box" action="" method="post" name="login">
             <h1 class="box-title">Connexion</h1>
-            <input type="text" class="box-input" name="username" placeholder="Nom d'utilisateur">
+            <input type="text" class="box-input" name="pseudo" placeholder="Nom d'utilisateur">
             <input type="password" class="box-input" name="password" placeholder="Mot de passe">
-            <input type=radio class="box-input radio " name="genre" value="h">
-            <input type=radio class="box-input" name="genre" value="f">
-            <input type="submit" value="Connexion " name="submit" class="box-button">
+            <button type="submit" name="submit" class="box-button btn btn-primary">connexion</button>
             <p class="box-register">Vous êtes nouveau ici ? <a href="register.php">S'inscrire</a></p>
             <?php if (! empty($message)) { ?>
                 <p class="errorMessage"><?php echo $message; ?></p>
