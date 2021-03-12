@@ -1,7 +1,10 @@
 ﻿<!DOCTYPE html>
 <html>
     <head>
-            <link rel="stylesheet" href="style.css" />
+		<?php $title = 'insciption'; ?>
+        <?php $up = '../'; ?>
+        <?php include('../include/head.php'); ?>
+        <link rel="stylesheet" href="style.css" />
     </head>
     <body>
 
@@ -44,23 +47,22 @@
 				}
 			// Cas où le formulaire n'a pas encore été validé
 			}else{
-			?>
+			?><?php include('../include/navbar.php'); ?>
 					<form class="box" action="" method="post">
 						<h1 class="box-title">S'inscrire</h1>
 						<input type="text" class="box-input" name="pseudo" placeholder="Nom d'utilisateur" required />
 						<input type="text" class="box-input" name="email" placeholder="Email" required />
 						<input type="password" class="box-input" name="password" placeholder="Mot de passe" required />
 						<input type="password" class="box-input" name="password2" placeholder="Mot de passe (confirmation) " required />
+						<div class="center-80-percent">
 						<input type="radio" class="register_radio" name="choixgenre" value="H">
    						<label >Homme</label>
    						<input type="radio"  class="register_radio"  name="choixgenre" value="F">
     					<label >Femme</label>
     					<input type="radio"  class="register_radio"  name="choixgenre" value="N">
     					<label >Non genré</label>
-
-
-
-						<input type="submit" name="submit" value="S'inscrire" class="box-button" />
+						</div>
+						<button type="submit" name="submit" class="btn btn-primary box-button">S'inscrire</button>
 						<p class="box-register">Déjà inscrit ? <a href="login.php">Connectez-vous ici</a></p>
 					</form>
 			<?php

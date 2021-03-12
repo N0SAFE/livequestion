@@ -1,60 +1,236 @@
-/*.container{
-	width: 100%;
-}*/
+/* All */
 
-
-
-/* ACCEUIL */
- 
- .acceuilText {
- 	
- }
-
-
-
-.titreAcceuil {
- font-size: 50px;
- padding-left: 270px;
+.decoration-none {
+    text-decoration: none;
 }
 
-.txtAcceuil {
-	font-size: 15px;
-	padding-left: 280px;
+
+/* javascipt */
+
+.display-none {
+    display: none;
 }
 
-.imgAcceuil2 {
-	padding-right: 280px;
-	padding-top: 40px;
-	width: 780px;
-}
-
-.butoAcceuil {
-	padding-left: 290px;
-	
-}
 
 /* navbar */
 
-.btnPink {
-    background-color: #ED008C;
-    border-radius: 35px !important;
-    height: 28px;
-    width: 100px;
+header .buttonNavbar {
+    height: 50px;
+    width: 150px;
 }
 
-.navleft {
-    padding-left: 8%;
+header .navbarRight {
+    margin-right: 50px;
 }
 
-.navright {
-    padding-right: 20%;
+header .navbarLeft {
+    margin-left: 50px;
+}
 
+@media screen and (max-width:768px) {
+    nav .navbarLeft {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width:850px) {
+    nav .navbarRight {
+        margin-right: 0;
+    }
+}
+
+
+/* ACCEUIL */
+
+.Acceuil {
+    background-color: #1A2D34;
+    height: 700px;
+    border-bottom-right-radius: 50% 100px;
+    border-bottom-left-radius: 50% 100px;
+}
+
+.Acceuil .titreAcceuilLigne1 {
+    font-size: 60px;
+    padding-left: 270px;
+}
+
+.Acceuil .titreAcceuilLigne2 {
+    font-size: 60px;
+    padding-left: 270px;
+    margin-top: -40px;
+}
+
+.Acceuil .titreAcceuilLigne3 {
+    font-size: 60px;
+    padding-left: 270px;
+    margin-top: -40px;
+}
+
+.Acceuil .txtAcceuil {
+    font-size: 20px;
+    padding-left: 270px;
+    line-height: 15px;
+}
+
+.Acceuil .tailleImg {
+    padding-left: 40px;
+    padding-top: 140px;
+    width: 450px;
+}
+
+.Acceuil .butonAcceuil {
+    margin-left: 280px;
+    height: 60px;
+    width: 150px;
+}
+
+@media screen and (max-width:1410px) {
+    .Acceuil {
+        height: 900px;
+    }
+    .Acceuil .txtAcceuil {
+        width: 100%;
+        float: none;
+    }
+    .Acceuil .acceuilText {
+        float: none !important;
+    }
+    .Acceuil .titreAcceuilLigne1 {
+        float: left;
+        margin: 0;
+        padding: 0;
+    }
+    .Acceuil .titreAcceuilLigne2 {
+        float: left;
+        margin: 0;
+        padding-left: 10px;
+        display: inline;
+    }
+    .Acceuil .titreAcceuilLigne3 {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .Acceuil .centerMedia {
+        width: 590px;
+        height: 70px;
+        margin: 0 auto;
+    }
+    .Acceuil .txtAcceuil {
+        text-align: center;
+        padding-left: 0px;
+    }
+    .Acceuil .butonAcceuil {
+        margin-left: 0;
+    }
+    .Acceuil .txtAcceuil {
+        padding-top: 10px;
+        font-size: 20px;
+        padding-left: 0px;
+        line-height: 30px;
+        margin: 0 auto;
+        width: 590px;
+    }
+    .Acceuil .txtAcceuilMedia {
+        display: inline;
+    }
+    .Acceuil .placementButton {
+        margin: 0 auto;
+        padding-top: 40px;
+        width: 150px;
+    }
+    .Acceuil .tailleImg {
+        padding-top: 0px;
+        width: 590px;
+    }
+    .Acceuil .placementImg {
+        margin: 0 auto;
+        padding-top: 20px;
+        width: 590px;
+    }
+}
+
+
+/*section 2*/
+
+.section2 .tailleImg {
+    size: 45px;
+}
+
+@media screen and (max-width:1000px) {
+    .section2 .notMedia {
+        display: none;
+    }
+}
+
+@media screen and (min-width:1001px) {
+    .section2 .media {
+        display: none;
+    }
+}
+
+
+/* section3 */
+
+.section3 {
+    background-color: #EEEEEE;
+}
+
+.section3 h1 {
+    font-size: 50px;
+}
+
+.section3 .lien .cadre {
+    background-color: #E2329F;
+    border-radius: 8px;
+    color: white;
+}
+
+.section3 .img {
+    height: 50px;
+    border-radius: 50%;
+}
+
+.section3 .lien1 .img-up {
+    height: 410px;
+}
+
+.section3 .lien2 .img-up {
+    height: 370px;
+}
+
+.section3 .lien3 .img-up {
+    height: 470px;
+}
+
+@media (max-width: 600px) {
+    .section3 .center-600-px {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:1420px) {
+    .section3 .container .img-up {
+        width: 580px;
+    }
+    .section3 .container .placementImg {
+        margin: 0 auto;
+        width: 580px;
+    }
+    .section3 .container .container-text {
+        padding: 0;
+        padding-top: 10px;
+        float: none;
+        margin: 0 auto;
+        width: 580px;
+    }
 }
 
 
 /* big black */
 
-.bigBlack {
+.section4 {
     background-color: #1A2D34;
 }
 
@@ -63,10 +239,8 @@
 }
 
 .bigBlack h2 {
-    color: #FFFFFF;
+    color: #050303;
     display: inline-block;
-    padding-top: 200px;
-    padding-bottom: 200px;
 }
 
 
@@ -76,6 +250,8 @@
     background-color: #DB008B;
     margin: 0;
     padding-bottom: 100px;
+    border-bottom-right-radius: 50% 100px;
+    border-bottom-left-radius: 50% 100px;
 }
 
 .bigPink h1 {
@@ -92,18 +268,6 @@
     padding-top: 10px;
 }
 
-.buttonMarqueDiv {
-    background-color: #DB008B;
-    padding-top: 50px;
-    padding-left: 350px;
-}
-
-.buttonMarqueDiv2 {
-    background-color: #DB008B;
-    padding-top: 10px;
-    padding-left: 400px;
-}
-
 .imgMarque {
     width: 30px;
     padding-right: 4px;
@@ -111,6 +275,14 @@
 
 
 /* FAQ */
+
+.section6 {
+    position: relative;
+    top: 150px;
+    border-bottom-right-radius: 50% 100px;
+    border-bottom-left-radius: 50% 100px;
+    background-color: white;
+}
 
 .faqDiv h1 {
     text-align: center;
@@ -130,9 +302,7 @@
 
 .abo {
     text-align: center;
-    font-size: 10px;
-    padding-top: 25px;
-    padding-bottom: 100px;
+    font-size: 14px;
 }
 
 .aboLien {
@@ -142,8 +312,8 @@
 
 /* LIEN */
 
-.linkAll {
-    background-color: #000000;
+footer {
+    background-color: #1A2D34;
 }
 
 .links {
