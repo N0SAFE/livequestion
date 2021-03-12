@@ -16,7 +16,7 @@
 					// Récupèration les 4 saisies du formulaire
 					$pseudo = $_POST['pseudo'];
 					$email = $_POST['email'];
-					$password = hash('sha256', $_POST['password']);
+					$password = $_POST['password'];
 					$choixgenre = $_POST['choixgenre'];
 					
 					// Connexion à la BD

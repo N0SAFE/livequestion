@@ -17,13 +17,13 @@
 
             if (isset($_POST['submit'])){
                 $pseudo = $_POST['pseudo'];
-				$password = hash('sha256', $_POST['password']);
+				$password =  $_POST['password'];
 
                 // Préparation de la requête
                 $query = $co->prepare('SELECT * FROM utilisateurs WHERE pseudo_uti=:login and mot_de_passe_uti=:pass');
 
                 // Association des paramètres aux variables/valeurs
-                $query->bindParam(':login', $username);
+                $query->bindParam(':login', $pseudo);
 				$query->bindParam(':pass', $password);
 
                 // Execution de la requête
@@ -41,7 +41,7 @@
 					// On définit la variable de session username avec la valeur saisie par l'utilisateur
                     $_SESSION['pseudo'] = $pseudo;
 					// On lance la page index.php à la place de la page actuelle
-                    header("Location: index.php");
+                    header("Location: index_connexion.php");
                 }else{
 					// Si la requête ne retourne rien, alors l'utilisateur n'existe pas dans la BD, on lui
 					// affiche un message d'erreur

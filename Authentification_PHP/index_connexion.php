@@ -3,21 +3,21 @@
 	session_start();
 
 	// Vérifie si l'utilisateur est connecté, sinon redirection vers la page de connexion
-	if(!isset($_SESSION["username"])){
+	if(!isset($_SESSION["pseudo"])){
 		header("Location: login.php");
 		exit(); 
 	}
-	var_dump($_SESSION);
+	
 ?>
 
 <!DOCTYPE html>
 <html>
 	<head>
-	   <link rel="stylesheet" href="style.css" />
+	   <link rel="stylesheet" href="style_connecter.css" />
 	</head>
 	<body>
 		<div class="sucess">
-		<h1>Bienvenue <?php echo $_SESSION['username']; ?> !</h1>
+		<h1>Bienvenue <?php echo $_SESSION['pseudo']; ?> !</h1>
 		<p>C'est votre tableau de bord.</p>
 		<a href="logout.php">Déconnexion</a>
 		</div>
