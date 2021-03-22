@@ -9,10 +9,14 @@
 	}
 	
 ?>
-
+ <?php $title = 'livequestion'; ?>
+ <?php $up = '../'; ?>
 <!DOCTYPE html>
+
 <html>
 	<head>
+
+	 <?php include('../include/head.php'); ?>
 	   <link rel="stylesheet" href="style_connecter.css" />
 	</head>
 	<body>
