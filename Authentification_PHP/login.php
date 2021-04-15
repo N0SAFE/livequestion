@@ -44,7 +44,7 @@
 					// On définit la variable de session username avec la valeur saisie par l'utilisateur
                     $_SESSION['pseudo'] = $pseudo;
 					// On lance la page index.php à la place de la page actuelle
-                    header("Location: index_connexion.php");
+                    header("Location: ../page_question/index.php");
                 }else{
 					// Si la requête ne retourne rien, alors l'utilisateur n'existe pas dans la BD, on lui
 					// affiche un message d'erreur
@@ -52,7 +52,9 @@
                 }
             }
         ?>
-        <?php include('../include/navbar.php'); ?>
+        <header>
+            <?php include('../include/navbar.php'); ?>
+        </header>
         <form class="box" action="" method="post" name="login">
             <h1 class="box-title">Connexion</h1>
             <input type="text" class="box-input" name="pseudo" placeholder="Nom d'utilisateur">
@@ -63,5 +65,6 @@
                 <p class="errorMessage"><?php echo $message; ?></p>
             <?php } ?>
         </form>
+        <?php include('../include/script.php'); ?>
     </body>
 </html>

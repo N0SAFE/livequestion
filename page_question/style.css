@@ -1,0 +1,14 @@
+body{background-color: rgba(236,0,140, 0.04);}
+.sucess{
+    position: relative; left: -50%;
+    z-index: 2;
+    height: 50px;
+    background-color:#ED008C ;
+    text-align: center; 
+    top: -24px;
+    border-bottom-right-radius: 40px 40px;
+    border-bottom-left-radius: 40px 40px;
+}
+#connexion{display:none;}
+.nav-link{display:none;}
+#logout{display:hidden;}

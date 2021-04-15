@@ -431,6 +431,134 @@
     width: 1000px;
 }
 
+.height-10-px {
+    height: 10px;
+}
+
+.height-20-px {
+    height: 20px;
+}
+
+.height-50-px {
+    height: 50px;
+}
+
+.height-75-px {
+    height: 75px;
+}
+
+.height-100-px {
+    height: 100px;
+}
+
+.height-150-px {
+    height: 250px;
+}
+
+.height-200-px {
+    height: 200px;
+}
+
+.height-250-px {
+    height: 250px;
+}
+
+.height-300-px {
+    height: 300px;
+}
+
+.height-400-px {
+    height: 400px;
+}
+
+.height-500-px {
+    height: 500px;
+}
+
+.height-600-px {
+    height: 600px;
+}
+
+.height-700-px {
+    height: 700px;
+}
+
+.height-800-px {
+    height: 800px;
+}
+
+.height-900-px {
+    height: 900px;
+}
+
+.height-1000-px {
+    height: 1000px;
+}
+
+.width-10-px {
+    width: 10px;
+}
+
+.width-20-px {
+    width: 20px;
+}
+
+.width-50-px {
+    width: 50px;
+}
+
+.width-75-px {
+    width: 75px;
+}
+
+.width-100-px {
+    width: 100px;
+}
+
+.width-150-px {
+    width: 250px;
+}
+
+.width-200-px {
+    width: 200px;
+}
+
+.width-250-px {
+    width: 250px;
+}
+
+.width-300-px {
+    width: 300px;
+}
+
+.width-400-px {
+    width: 400px;
+}
+
+.width-500-px {
+    width: 500px;
+}
+
+.width-600-px {
+    width: 600px;
+}
+
+.width-700-px {
+    width: 700px;
+}
+
+.width-800-px {
+    width: 800px;
+}
+
+.width-900-px {
+    width: 900px;
+}
+
+.width-1000-px {
+    width: 1000px;
+}
+
 .gap-2 {
     width: 50%;
 }
@@ -513,4 +641,16 @@
 
 .color-black {
     color: black;
+}
+
+.bg-color-pink {
+    background-color: #E2329F;
+}
+
+.bg-color-white {
+    background-color: white;
+}
+
+.bg-color-black {
+    background-color: black;
 }

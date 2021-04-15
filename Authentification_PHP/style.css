@@ -25,9 +25,10 @@ nav .navbarLeft {
     }
 }
 
-.connexion {
-    display: none;
-}
+#connexion {display: none;}
+#posequestion {display: none;}
+.nav-link{display:none;}
+#navbar-toggle{display:none;}
 
 
 /* All */

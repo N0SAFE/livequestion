@@ -26,3 +26,12 @@ function link3() {
     document.querySelector("#secondButton").classList.remove("cadre");
     document.querySelector("#thirdButton").classList.add("cadre");
 }
+function showDiv1(data, name) {
+    document.getElementById(name).style.visibility = data;
+}
+function timeOut(data, nameing, timeout=1000)
+setTimeout("showDiv1('"+data+"'", "'"+nameing+"')", timeout);
+function showDiv2() {
+    document.getElementById("div2").style.visibility = "visible";
+}
+setTimeout("showDiv2()", 30000); // aprés 30 secs

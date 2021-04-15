@@ -13,11 +13,7 @@
 
 
 /* navbar */
-
-header .buttonNavbar {
-    height: 50px;
-    width: 150px;
-}
+#posequestion{display:none;}
 
 header .navbarRight {
     margin-right: 50px;
