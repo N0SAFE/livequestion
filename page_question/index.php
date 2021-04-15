@@ -21,7 +21,6 @@
 </head>
 
 <body>
-<!-- <script>showDiv1();</script> -->
     <header>
     <div style="position: absolute; left: 50%;" class="test">
         <div class="sucess padding-right-20 padding-left-20" data-aos="fade-down">
