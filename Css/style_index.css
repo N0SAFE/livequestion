@@ -234,13 +234,8 @@ header .navbarLeft {
     background-color: #1A2D34;
 }
 
-.bigBlack .iplay {
-    display: inline-block;
-}
-
-.bigBlack h2 {
-    color: #050303;
-    display: inline-block;
+.bigBlack .div-auto {
+    padding-top: 15px;
 }
 
 
