@@ -25,6 +25,7 @@
     <div style="position: absolute; left: 50%;" class="test">
         <div class="sucess padding-right-20 padding-left-20" data-aos="fade-down">
             <h1>Bienvenue <?php echo $_SESSION['pseudo']; ?> !</h1>
+             
         </div>
     </div>
     <?php include("../include/navbar.php");?>
@@ -97,20 +98,74 @@
     </div>
     <?php include('../include/script.php');?>
     <div class="question center-80-percent">
-        <div class="profile">
+       
+        <div class="container bg-white"> 
+            <div class="profile">
             <p>(img profile) (nom profile) (date de post) (tag)</p>
-        </div>
-        <div class="container bg-white">
+            </div>
         <div class="titre">
             <h1>
             titre
             </h1>
         </div>
-        <div class="content">
+       <!--  <div class="content">
             content
-        </div>
+        </div> -->
         </div>
     </div>
+
+    <!-- modal pour modifier le nom d'utilisateur a mettre en forme avec du css -->
+
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modifProfil">
+  Profil
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="modifProfil" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Bienvenue sur votre profil</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       <h3><?php echo $_SESSION['pseudo']; ?></h3> 
+        <br>
+        <form method="post">
+            <input name="id" type="hidden" value="<?php  ?>" >
+            <label for="modifyUsername">Changer votre nom d'utilisateur :</label>
+            <input type="text" name="modifyUsername" required>
+            <input type="submit" name="submitModif" value="Confirmer le changement">
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">X</button>
+
+        <!-- php pour modifier le nom d'utilisateur  -->
+
+        <?php
+
+        if (isset($_POST["submitModif"])) {
+    
+    $modifyUsername = $_POST["modifyUsername"];
+    $co = connexionBdd();
+    $query = $co->prepare("UPDATE utilisateurs SET pseudo_uti = :modifyUsername WHERE  id = :id ");
+    $query->bindParam(":modifyUsername", $modifyUsername);
+    $query->bindParam(":id", $_SESSION['id'][0][0]);
+    $query->execute();
+}
+
+        ?>
+
+       
+       
+      </div>
+    </div>
+  </div>
+</div>
+
+
 </body>
 
 </html>

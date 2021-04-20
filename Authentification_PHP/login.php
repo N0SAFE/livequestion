@@ -23,7 +23,7 @@
 				$password =  $_POST['password'];
 
                 // Préparation de la requête
-                $query = $co->prepare('SELECT * FROM utilisateurs WHERE pseudo_uti=:login and mot_de_passe_uti=:pass');
+                $query = $co->prepare('SELECT id FROM utilisateurs WHERE pseudo_uti=:login and mot_de_passe_uti=:pass');
 
                 // Association des paramètres aux variables/valeurs
                 $query->bindParam(':login', $pseudo);
@@ -43,6 +43,7 @@
                 if($rows==1){
 					// On définit la variable de session username avec la valeur saisie par l'utilisateur
                     $_SESSION['pseudo'] = $pseudo;
+                    $_SESSION['id'] = $result;
 					// On lance la page index.php à la place de la page actuelle
                     header("Location: ../page_question/index.php");
                 }else{
