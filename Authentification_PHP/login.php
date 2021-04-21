@@ -43,7 +43,7 @@
 				// Si une ligne résultat est trouvée, cela signifi que l'utilisateur existe dans la BD
 				// et donc qu'il a le droit de se connecter
                 if($rows==1){
-					// On définit la variable de session username avec la valeur saisie par l'utilisateur
+					// On définit la variable de session username avec la valeur saisie par l'utilisateur et id avec l'id qui lui est attribuer
                     $_SESSION['pseudo'] = $pseudo;
                     $_SESSION['id'] = $result;
 					// On lance la page index.php à la place de la page actuelle

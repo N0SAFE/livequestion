@@ -127,6 +127,8 @@ function form($errorPass=False, $errorEmail=False, $existEmail=False, $existPseu
 												<h3 style='text-align: center; color:white;'>Vous êtes inscrit avec succès.</h3>
 												<p style='text-align: center; color:white;'>Cliquez ici pour vous <a href='login.php'>connecter</a></p>
 											</div>";
+										sleep(5);
+										header('location: register.php');
 									}
 								}
 								else{

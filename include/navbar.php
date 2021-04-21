@@ -36,9 +36,9 @@
                     <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
             </div>
+            <button style="height: 50px; width: 150px;" id="connexion" type="button" class="btn btn-primary connexion" onclick="window.location.href='Authentification_PHP/login.php'">se connecter</button>
+            <button style="height: 50px; width: 200px;" id="posequestion" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ModalQuestion">poser une question</button>
         </div>
-        <button style="height: 50px; width: 150px;" id="connexion" type="button" class="btn btn-primary connexion" onclick="window.location.href='Authentification_PHP/login.php'">se connecter</button>
-        <button style="height: 50px; width: 200px;" id="posequestion" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ModalQuestion">poser une question</button>
         <area style="margin-right: 50px; height:50px;">
         <button id="navbar-toggle" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
