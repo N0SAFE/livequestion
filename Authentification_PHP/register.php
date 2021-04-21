@@ -57,7 +57,7 @@ function form($errorPass=False, $errorEmail=False, $existEmail=False, $existPseu
 				<p style="position:relative; margin-top:-20px; margin-left: 100px; color:red;">le mot de passe est trop faible</p>
 			<?php }?>
             <div class="center-80-percent">
-                <input type="radio" class="register_radio" name="choixgenre" value="H">
+                <input type="radio" class="register_radio" name="choixgenre" value="H" required="">
                 <label>Homme</label>
                 <input type="radio" class="register_radio" name="choixgenre" value="F">
                 <label>Femme</label>
