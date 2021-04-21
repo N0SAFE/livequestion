@@ -23,7 +23,7 @@ function form($errorPass=False, $errorEmail=False, $existEmail=False, $existPseu
 	<?php }else{?>
     	<div class="login-box">
 	<?php }?>
-        <h2>Login</h2>
+        <h2>Register</h2>
         <form class="box" action="" method="post">
             <div class="user-box">
                 <input type="text" name="pseudo" required="">
