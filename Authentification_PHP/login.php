@@ -1,14 +1,16 @@
 ﻿<!DOCTYPE html>
 <html>
-    <head>
-        <?php $title = 'connexion'; ?>
-        <?php $up = '../'; ?>
-        <?php include('../include/head.php'); ?>
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-        
-        <?php
+
+<head>
+    <?php $title = 'connexion'; ?>
+    <?php $up = '../'; ?>
+    <?php include('../include/head.php'); ?>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <?php
 			// Permet d'appeler la fonction de connexion à la BD
             require('connexion.php');
 			
@@ -52,19 +54,36 @@
                 }
             }
         ?>
-        <header>
-            <?php include('../include/navbar.php'); ?>
-        </header>
+    <header>
+        <?php include('../include/navbar.php'); ?>
+    </header>
+    <div class="login-box">
+        <h2>Login</h2>
         <form class="box" action="" method="post" name="login">
-            <h1 class="box-title">Connexion</h1>
-            <input type="text" class="box-input" name="pseudo" placeholder="Nom d'utilisateur">
-            <input type="password" class="box-input" name="password" placeholder="Mot de passe">
-            <button type="submit" name="submit" class="box-button btn btn-primary">connexion</button>
-            <p class="box-register">Vous êtes nouveau ici ? <a href="register.php">S'inscrire</a></p>
-            <?php if (! empty($message)) { ?>
-                <p class="errorMessage"><?php echo $message; ?></p>
-            <?php } ?>
+            <div class="user-box">
+                <input type="text" name="pseudo" required="">
+                <label>Username</label>
+            </div>
+            <div class="user-box">
+                <input type="password" name="password" required="">
+                <label>Password</label>
+            </div>
+            <button href="#" name="submit">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Connexion
+        </button>
         </form>
-        <?php include('../include/script.php'); ?>
-    </body>
+        <div class="container margin-top-20">
+        <p class="box-register">Vous êtes nouveau ici ? <a href="register.php">S'inscrire</a></p>
+        <?php if (! empty($message)) { ?>
+        <p class="errorMessage"><?php echo $message; ?></p>
+        <?php } ?>
+        </div>
+    </div>
+    <?php include('../include/script.php'); ?>
+</body>
+
 </html>

@@ -643,6 +643,10 @@
     color: black;
 }
 
+.color-red {
+    color: red;
+}
+
 .bg-color-pink {
     background-color: #E2329F;
 }
