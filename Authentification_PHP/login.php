@@ -22,10 +22,10 @@
 
             if (isset($_POST['submit'])){
                 $pseudo = $_POST['pseudo'];
-				$password =  $_POST['password'];
+                $password = crypt($_POST['password'], '$6$rounds=5000$usesomesillystringforsalt$');
 
                 // Préparation de la requête
-                $query = $co->prepare('SELECT id FROM utilisateurs WHERE pseudo_uti=:login and mot_de_passe_uti=:pass');
+                $query = $co->prepare('SELECT * FROM utilisateurs WHERE pseudo_uti=:login and mot_de_passe_uti=:pass');
 
                 // Association des paramètres aux variables/valeurs
                 $query->bindParam(':login', $pseudo);
@@ -44,8 +44,9 @@
 				// et donc qu'il a le droit de se connecter
                 if($rows==1){
 					// On définit la variable de session username avec la valeur saisie par l'utilisateur et id avec l'id qui lui est attribuer
-                    $_SESSION['pseudo'] = $pseudo;
-                    $_SESSION['id'] = $result;
+                    $_SESSION['all'] = $result;
+                    $_SESSION['loading'] = "nothing";
+                    $_SESSION['section'] = '1';
 					// On lance la page index.php à la place de la page actuelle
                     header("Location: ../page_question/index.php");
                 }else{
@@ -80,7 +81,7 @@
         <div class="container margin-top-20">
         <p class="box-register">Vous êtes nouveau ici ? <a href="register.php">S'inscrire</a></p>
         <?php if (! empty($message)) { ?>
-        <p class="errorMessage"><?php echo $message; ?></p>
+            <p style="color:red;" class="errorMessage padding-top-25"><?php echo $message; ?></p>
         <?php } ?>
         </div>
     </div>

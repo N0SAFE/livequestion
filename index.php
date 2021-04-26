@@ -80,9 +80,9 @@
             <h1 class="text-center">Aenean magna odio</h1>
             <p class="padding-top-20 text-center">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.</p>
             <div class="container clearfix padding-top-25 center-300-px lien">
-                <button onclick="link1()" id="firstButton" class="btn gap-3 color-pink text-center float-start padding-top-10 padding-bottom-10">Lien1</button>
-                <button onclick="link2()" id="secondButton" class="btn gap-3 color-pink text-center float-start padding-top-10 padding-bottom-10">Lien2</button>
-                <button onclick="link3()" id="thirdButton" class="btn gap-3 color-pink text-center float-start padding-top-10 padding-bottom-10">Lien3</button>
+                <button onclick="link1(1)" id="firstButton" class="btn gap-3 color-pink text-center float-start padding-top-10 padding-bottom-10 cadre">Lien1</button>
+                <button onclick="link1(2)" id="secondButton" class="btn gap-3 color-pink text-center float-start padding-top-10 padding-bottom-10">Lien2</button>
+                <button onclick="link1(3)" id="thirdButton" class="btn gap-3 color-pink text-center float-start padding-top-10 padding-bottom-10">Lien3</button>
             </div>
         </div>
         <div id="firstlink" class="container center-70-percent lien1 padding-top-50 clearfix">
@@ -98,7 +98,7 @@
                 </div>
             </div>
         </div>
-        <div id="secondlink" class="container center-70-percent lien2 padding-top-50 clearfix">
+        <div id="secondlink" class="container center-70-percent lien2 padding-top-50 clearfix display-none">
             <div class="container float-start gap-400-px padding-top-50">
                 <h2 class="float-none">Duis et eros lorem.</h2>
                 <p>Ned ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.</p>
@@ -111,7 +111,7 @@
                 <img src="images/step-3.jpg" class="img-up float-start padding-left-50">
             </div>
         </div>
-        <div id="thirdlink" class="container center-70-percent lien3 padding-top-50 clearfix">
+        <div id="thirdlink" class="container center-70-percent lien3 padding-top-50 clearfix display-none">
             <div class="container float-start gap-400-px padding-top-50">
                 <h2 class="float-none">Curabitur gravida metus at mi malesuada.</h2>
                 <p>Ned ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.</p>
@@ -156,7 +156,7 @@
         </div>
     </section>
     <section class="section6 padding-bottom-100">
-        <div class=" container-fluid faqDiv ">
+        <div class="container-fluid faqDiv ">
             <h1>FAQ</h1>
             <p class="pDeFaq ">Sed up perpiciatis unde omnis iste natus error sit voluptatem<br> accusantium doloremqe laudantium, totam rem aperiam aeque ipsa </p>
             <br>

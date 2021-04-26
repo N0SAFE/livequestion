@@ -1,4 +1,7 @@
-body{background-color: rgba(236,0,140, 0.04);}
+body{background-color:aliceblue;
+    min-height: 100%;
+    position: relative;}
+html{height: 100%;}
 .sucess{
     position: relative; left: -50%;
     z-index: 2;
@@ -9,6 +12,48 @@ body{background-color: rgba(236,0,140, 0.04);}
     border-bottom-right-radius: 40px 40px;
     border-bottom-left-radius: 40px 40px;
 }
+.cadre {
+    background-color: #E2329F;
+    border-radius: 8px;
+    color: white;
+}
+.display-none {
+    display: none;
+}
 #connexion{display:none;}
 .nav-link{display:none;}
 #logout{display:hidden;}
+.linksImg{border-radius: 100px;}
+@media screen and (max-width:767px) {
+    .center-70-percent{width: 100% !important;}
+    .profilePicture{
+        height:50px !important;
+        width:50px !important;
+    }
+    #firstlink .content{
+        padding-left: 55px !important;
+    }
+    #firstlink .repondre-button{
+        position: relative;
+        bottom: 40px;
+    }
+    #firstlink .div-all {
+        padding-bottom: 0px;
+    }
+    #firstlink .div-button-p {
+        height: 75px;
+    }
+    .sucess {
+        display: none;
+    }
+}
+@media screen and (max-width:1000px) {
+    .sucess {
+        font-size: 10px;
+        padding-top: 10px;
+    }
+}
+.profilePicture{
+    height:75px;
+    width:75px
+}

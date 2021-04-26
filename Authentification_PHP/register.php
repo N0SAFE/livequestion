@@ -110,6 +110,7 @@ function form($errorPass=False, $errorEmail=False, $existEmail=False, $existPseu
 								$query->execute();
 								$result = $query->fetchall();
 								if (empty($result) == 1){
+									$password = crypt($password, '$6$rounds=5000$usesomesillystringforsalt$');
 									$query = $co->prepare("INSERT into utilisateurs (pseudo_uti, email_uti, mot_de_passe_uti, genre_uti) VALUES (:pseudo, :email, :password, :choixgenre)");
 
 									// Association des paramètres aux variables/valeurs
@@ -120,16 +121,37 @@ function form($errorPass=False, $errorEmail=False, $existEmail=False, $existPseu
 
 									// Exécution de la requête
 									$query->execute();
-										
-									// Message de succès si l'insertion est réalisée
-									if ($query) {
-										echo "<div class='sucess center-500-px'>
-												<h3 style='text-align: center; color:white;'>Vous êtes inscrit avec succès.</h3>
-												<p style='text-align: center; color:white;'>Cliquez ici pour vous <a href='login.php'>connecter</a></p>
-											</div>";
-										sleep(5);
-										header('location: register.php');
+
+									$query = $co->prepare('SELECT id, genre_uti FROM utilisateurs WHERE pseudo_uti=:login and mot_de_passe_uti=:pass');
+									// Association des paramètres aux variables/valeurs
+									$query->bindParam(':login', $pseudo);
+									$query->bindParam(':pass', $password);
+
+									// Execution de la requête
+									$query->execute();    
+
+									// Récupération dans la variable $result de toutes les lignes que retourne la requête
+									$result = $query->fetchall();
+									$avatar_name = $result[0]['id'].".svg";
+									
+									if ($result[0]['genre_uti'] == "F"){
+										copy("../avatar/avatar_base/women.svg", "../avatar/".$result[0][0].".svg");
+									}else{
+										copy("../avatar/avatar_base/men.svg", "../avatar/".$result[0][0].".svg");
 									}
+									$query = $co->prepare("UPDATE utilisateurs SET avatar_uti = :avatar WHERE  id = :id");
+									// Association des paramètres aux variables/valeurs
+									$query->bindParam(':avatar', $avatar_name);
+									$query->bindParam(':id', $result[0][0]);
+									// Exécution de la requête
+									$query->execute();
+									
+									// Message de succès si l'insertion est réalisée
+									echo "<div class='sucess center-500-px'>
+											<h3 style='text-align: center; color:white;'>Vous êtes inscrit avec succès.</h3>
+											<p style='text-align: center; color:white;'>Cliquez ici pour vous <a href='login.php'>connecter</a></p>
+										</div>";
+									
 								}
 								else{
 									form(False, False, False, True);
