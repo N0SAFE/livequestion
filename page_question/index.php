@@ -262,7 +262,7 @@ function ModalProfil($error){
     <div class="center-400-px clearfix padding-top-100">
         <form method="post"><button id="firstButton" class="btn gap-3 color-pink text-center float-start padding-top-10 padding-bottom-10" name="section" value="1" type="submit">les question</button></form>
         <form method="post"><button id="secondButton" class="btn gap-3 color-pink text-center float-start padding-top-10 padding-bottom-10" name="section" value="2" type="submit">vos question</button></form>
-        <form method="post"><button id="thirdButton" class="btn gap-3 color-pink text-center float-start padding-top-10 padding-bottom-10" name="section" value="3" type="submit">profile</button></form>
+        <form method="post"><button id="thirdButton" class="btn gap-3 color-pink text-center float-start padding-top-10 padding-bottom-10" name="section" value="3" type="submit">profil</button></form>
     </div>
     <div id="firstlink" class=" lien1 padding-top-50 clearfix">
     <?php 
@@ -398,7 +398,7 @@ function ModalProfil($error){
             // var_dump($result);
             // On affiche chaque entrée
             echo '<h3">Vos Question :</h3>
-            <table border="1" bordercolor="#ff0000" style="width:100%;">
+            <table border="1" bordercolor="#FF00FF" style="width:100%;" class="tabQuestion">
                 <tr>
                     <th>id</th> 
                     <th>Pseudo</th>
@@ -436,7 +436,7 @@ function ModalProfil($error){
         <h3><?php echo $_SESSION['all'][0]['email_uti']; ?></h3>
         <?php echo $error['email']; ?>
         <form method="post">
-            <label for="modifyEmail">Changer votre nom d'utilisateur :</label>
+            <label for="modifyEmail">Changer votre email :</label>
             <input type="text" name="modifyEmail" required="">
             <input type="submit" name="submitModif" value="Confirmer le changement">
         </form>
@@ -444,7 +444,7 @@ function ModalProfil($error){
         <h3>changer le mot de passe</h3>
         <?php echo $error['password']; ?>
         <form method="post">
-            <label for="modifyPassword">Changer votre nom d'utilisateur :</label>
+            <label for="modifyPassword">Changer votre mot de passe :</label>
             <input type="text" name="modifyPassword" required="">
             <input type="submit" name="submitModif" value="Confirmer le changement">
         </form>
