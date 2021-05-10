@@ -8,8 +8,11 @@ Durée du projet: 2-3 mois
 LiveQuestion est un site de Question/Réponse ouvert.
 
 Déroulé du projet:
+
 - Intégration de la page d'accueil
+
 - Développement des formulaires d'inscription et connexion en lien avec la base de donnée dédié au projet
+
 - Développement des différentes partie visibles une fois l'utilisateur connecté:  - Formulaire pour poser une question
                                                                                   - Affichage des questions avec possibilité de reponse
                                                                                   - Espace utilisateurs
