@@ -13,9 +13,13 @@ Déroulé du projet:
 
 - Développement des formulaires d'inscription et connexion en lien avec la base de donnée dédié au projet
 
-- Développement des différentes partie visibles une fois l'utilisateur connecté:  - Formulaire pour poser une question
-                                                                                  - Affichage des questions avec possibilité de reponse
-                                                                                  - Espace utilisateurs
+- Développement des différentes partie visibles une fois l'utilisateur connecté:  
+
+- Formulaire pour poser une question
+
+- Affichage des questions avec possibilité de reponse
+
+- Espace utilisateurs
 
 
 Répartition des tâches:
