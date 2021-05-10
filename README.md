@@ -7,10 +7,10 @@ Réalisé Par Mathis Sébille(N0SAFE) et Clément Lairesse(CLR60)
 
 Durée du projet: 2-3 mois
 
-LiveQuestion est un site de Question/Réponse ouvert.
+LiveQuestion est un site de Questions/Réponses ouvertes.
 
-!!!!
-Déroulé du projet:
+
+## Déroulé du projet:
 
 - Intégration de la page d'accueil
 
@@ -24,8 +24,8 @@ Déroulé du projet:
 
 - Espace utilisateurs
 
-!!!!
-Répartition des tâches:
+
+## Répartition des tâches:
 
 - Intégration de la page d'accueil--> divisé en 2 zone pour une répartition équitable
 
